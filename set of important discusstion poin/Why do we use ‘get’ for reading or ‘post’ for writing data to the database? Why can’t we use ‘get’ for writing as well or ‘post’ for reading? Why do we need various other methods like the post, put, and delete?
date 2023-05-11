@@ -1,0 +1,33 @@
+Why do we use ‘get’ for reading or ‘post’ for writing data to the database? Why can’t we use ‘get’ for writing as well or ‘post’ for reading? Why do we need various other methods like the post, put, and delete?
+
+The HTTP protocol provides a set of standard methods or verbs that define the actions that can be performed on a resource identified by a URI (Uniform Resource Identifier), and these methods have specific purposes and behaviors.
+
+The GET method is used to retrieve or read data from a server, and it does not modify or change the state of the resource on the server. It is a safe and idempotent method, meaning that it can be repeated multiple times without changing the result.
+
+The POST method, on the other hand, is used to submit or write data to a server, and it can modify or change the state of the resource on the server. It is not safe nor idempotent, meaning that if the same request is sent multiple times, it may result in different outcomes.
+
+The reason why we cannot use GET for writing data to the database is that it violates the HTTP protocol's specifications and design principles. Using GET for writing data would make the requests idempotent, which means that the same request could be repeated multiple times, leading to data inconsistencies and errors.
+
+Similarly, we cannot use POST for reading data because it violates the HTTP protocol's semantics and design principles. POST requests are designed to submit data to the server, and it is not appropriate to use them to retrieve data.
+
+Other HTTP methods like PUT and DELETE have specific purposes and behaviors. The PUT method is used to update or replace an existing resource on the server with new data, while the DELETE method is used to delete a resource from the server. These methods are necessary because they provide a way to update and delete resources in a RESTful web application.
+
+In summary, the HTTP protocol's methods have specific purposes and behaviors, and they must be used correctly to ensure that the server and client can communicate effectively and securely.
+
+
+How can you transfer a big file of 1 GB over the internet? Dividing the data into chunks, serializing it.
+There are several ways to transfer a big file of 1 GB over the internet. Dividing the data into smaller chunks is one way to do it, and it can be done in several ways.
+
+One approach is to use a file transfer protocol that supports resumable transfers, such as FTP (File Transfer Protocol) or SFTP (Secure File Transfer Protocol). These protocols allow the file to be divided into smaller chunks and transferred in a reliable and secure way. If the transfer is interrupted, it can be resumed from where it left off, rather than having to start over from the beginning.
+
+Another approach is to use a file compression tool like WinZip, 7-Zip, or WinRAR to compress the file before transferring it. Compressed files take up less space and can be transferred more quickly. Once the file has been transferred, it can be decompressed on the recipient's end.
+
+Serializing the file is also an option. This involves converting the file into a format that can be easily transferred over the internet, such as a binary format like JSON or XML. The file is then transferred as a series of data packets, which can be reassembled on the recipient's end.
+
+In any case, it is important to ensure that the transfer is secure and that the data is not corrupted during the transfer. This can be done by using encryption, checksums, or other methods to verify the integrity of the data.
+
+
+
+
+
+

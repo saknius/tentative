@@ -1,0 +1,14 @@
+We compared languages with these requirements in mind. We discarded major languages, including  C++, Ruby, PHP, and Scala, that would not support growth in queries per second (QPS) and headcount. Although these are all fine languages, they lack one or more of the core tenets we were looking for in our future language stack. Given these considerations the landscape was limited to Kotlin, Java, Go, Rust, and Python 3. With these as the competitors we created the chart below to help us compare and contrast the strengths and weaknesses of each option.- Provides a strong library ecosystem
+- Easy to use
+- There was already a lot of experience on the team
+- Often easy to hire for
+- Has first class support for GRPC, HTTP, Cassandra, and SQL
+- Has a REPL for easy testing and debugging of live apps
+
+disadv Runs slowly compared to most options
+The global interpreter lock makes its difficult to fully utilize our multicore machines effectively
+- Does not have a strong type checking feature
+- Kafka support can be spotty at times and there are lags in features
+
+
+https://doordash.engineering/2021/05/04/migrating-from-python-to-kotlin-for-our-backend-services/

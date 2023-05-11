@@ -1,0 +1,2 @@
+https://doordash.engineering/2021/02/17/how-to-make-kafka-consumer-compatible-with-gevent-in-python/
+https://doordash.engineering/2021/01/19/scaling-efficienc-of-a-python-service-with-gevent/

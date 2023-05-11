@@ -1,0 +1,3 @@
+A sigmoid function gives an output between zero to one for every input it gets
+. These sigmoid units are connected to each other to form a neural network.
+The first step in building our neural network will be to initialize the parameters. We need to initialize two parameters for each of the neurons in each layer: 1) Weight and 2) Bias.

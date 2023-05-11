@@ -1,0 +1,17 @@
+Sharing a few aspects of Unit Test Smells that I have had in my career and my learnings.
+
+1. It goes outside either on the disk or wire to get the data needed to execute the Unit Test - consider breaking down the test and make your Unit Test a Pure Function
+
+2. It has orchestration logic that dictates how the test should execute and suffers from "Tell" instead of "Ask" (You ask for a type of Sandwich to be prepared instead of telling the Chef the steps to prepare one) - then consider revisiting your implementation and abstract out all the inner workings.
+
+3. If it tests more than one type of behaviour - consider breaking them down into individual units so that the root cause of failure can be determined easily. Also by definition it isn't a Unit if it tests more than one type of behaviour.
+
+4. Changes to your implementation result in frequent changes to Unit Tests - consider having an abstraction layer that allows for implementation to evolve rather than be fixed and rigid. As the software is being built, it is ok to have such a coupling initially when you are starting to build your intuition, but as the Domain evolves, consider revisiting your Objects and define higher order abstractions.
+
+Looking forward to hearing more from your mistakes too so that we all can learn.
+
+If you find this insightful, share this with your network to add value to them too.
+
+I write about Software and Data Engineering. Follow me to learn more from my experiences and also from the books I read.
+
+#software #softwareengineering

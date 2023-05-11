@@ -1,0 +1,6 @@
+major challenges
+it affects speed so try to optimize such that speed remauns almost same
+that we are majorly able to do only beacause of one thing that is
+recommendation boolean to notify us when to apply history and
+when to not.
+
