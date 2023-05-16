@@ -1,0 +1,4 @@
+We compared languages with these requirements in mind. We discarded major languages, including  C++, Ruby, PHP, and Scala, that would not support growth in queries per second (QPS) and headcount. Although these are all fine languages, they lack one or more of the core tenets we were looking for in our future language stack. Given these considerations the landscape was limited to Kotlin, Java, Go, Rust, and Python 3. With these as the competitors we created the chart below to help us compare and contrast the strengths and weaknesses of each option.
+
+CREATE INDEX element_name_tsvector_idx ON public.element
+USING gin (to_tsvector('russian'::regconfig, (name)::text));  look into this indexing why can it be faster

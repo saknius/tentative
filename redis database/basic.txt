@@ -1,0 +1,2 @@
+its a database(kind of a dictionary that can be accesseced on the spot)
+https://doordash.engineering/2020/11/19/building-a-gigascale-ml-feature-store-with-redis/

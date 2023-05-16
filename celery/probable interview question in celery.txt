@@ -1,0 +1,13 @@
+why did you choose this instead of apache kafka
+https://doordash.engineering/2020/09/03/eliminating-task-processing-outages-with-kafka/
+this article
+Pros	Cons
+Redis as broker
+Improved availability with ElasticCache and multi-AZ support
+Improved broker observability with ElasticCache as the broker
+Improved operational efficiency
+In-house operational experience and expertise with Redis
+A broker swap is straight-foward as a supported option in Celery
+Harakiri connection churn does not significantly degrade Redis performance
+While parallelism is, fundamentally, a Python problem, the concepts of this solution are applicable to other languages as well.
+

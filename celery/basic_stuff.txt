@@ -1,0 +1,6 @@
+so celery is basically an opensource(library/module) to keep our tasks in a queue and the way we handle those task can we varied on the basis of our actions.
+first issue that i faced with celery was of import issue it was not able to import libs and then what we tried to do was either change the file name etc etc but the issue was only solved when we made a seprate helper and imported whatever necceassay globally  and inside that function in usual function
+i could have tried to resolve the issue but i figured out that as celery is used by all i can't take decisions on my own i need to ask consultaion
+other recent isssue with celery came when it is throwinf some status code dict error in httpexception there was a workaroud that was avaialble but even that was throwing errror so only way that worked was passing the retry in case an http exception occurs
+u can define type of task and priority os each task helper
+f
