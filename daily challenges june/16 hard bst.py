@@ -135,6 +135,8 @@ class BinarySearchTree:
             return comb(len(left) + len(right), len(right)) * f(left) * f(right)
         
         return (f(nums) - 1) % (10**9 + 7)
+    
+    
 
     
 
