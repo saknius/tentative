@@ -120,7 +120,7 @@ class BinarySearchTree:
         left_count = count_nodes(root.left)
         if k <= left_count:
             return self.KthSmallest3(root.left, k)
-        elif k == left_count + 1:
+        elif k == left_count + 1:   
             return root.data
         else:
             return self.KthSmallest3(root.right, k - left_count - 1)
